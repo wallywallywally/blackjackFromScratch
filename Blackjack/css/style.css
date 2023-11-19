@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header p {
+    font-size: 10rem;
+}
+
+.initial-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bet-amount {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    width: 50%;
+}
+
+.account {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.btnbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6rem;
+    color: white;
+    width: 30rem;
+    padding-top: 1rem;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.btn:disabled {
+    color: #999;
+}
+
+.btnbox .btn:last-child {
+    margin-top: 2rem;
+}
+
+/* table */
+/* .table {
+
+} */
+
+.box {
+    border: 0.8rem solid black;
+}
+
+.dealer {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.player {
+    margin-bottom: 4rem;
+}
+
+.name {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+#dealer-deck .card,
+#player-deck .card {
+    display: none;
+}
+
+#dealer-deck,
+#player-deck {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    margin: 4rem 0;
+}
+
+.message {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
